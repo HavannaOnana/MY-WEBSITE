@@ -1,0 +1,146 @@
+// This is the Css van Cv.Htm
+.cv_body{
+    background-color: white;
+}
+
+@mixin circular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-family: Din;
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(12, 4, 4) 75%, beige 0);    
+}
+
+@font-face {
+    font-family:Din ;
+    src: url(/static/fonts/DIN.ttf);
+}
+
+@font-face {
+    font-family:Nixie ;
+    src: url(/static/fonts/NixieOne.ttf);
+}
+
+.navigation{
+    display: flex;
+    font-family: Din;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.navigation,a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navigation,div,ion-icon{
+    padding: 4px;
+}
+
+.navigation div:hover{
+    color: black;
+    border: black 1px solid;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.navigation div:hover ion-icon {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+.professional_details{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 7%;
+    font-family: Din;
+}
+
+span{
+    font-weight: bold;
+}
+
+img{
+    border: solid black 2px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-top: -30%;
+    margin-left: 32%;
+}
+
+.job_title{
+    font-family: Nixie;
+    margin-bottom: -42px;
+}
+
+.name{
+    font-family: Nixie;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.about_me{
+   font-family: Din;
+   margin-bottom: -10px;
+}
+
+.cv_text{
+    font-family: Din;
+}
+
+
+.progress-bar {
+   @include circular()
+}
+  
+.progress-bar::before {
+    content: "75%";
+}
+
+.vaar{
+    display: flex;
+    margin-left: 36%;
+    font-family: Din;
+    font-weight: lighter;
+}
+  
+.progress-bar2{
+    @include circular();
+    margin-left: 65%;
+    margin-top: -15%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(0, 0, 0) 32%, beige 0);    
+}
+
+.progress-bar2::before {
+    content: "32%";
+}
+
+.vaar2{
+    display: flex;
+    margin-left: 67%;
+    font-family: Din;
+    font-weight: lighter;
+}
+
+

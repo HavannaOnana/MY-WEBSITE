@@ -1,0 +1,85 @@
+body{
+    background-image: url("/static/images/musashi2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@font-face {
+    font-family:Din ;
+    src: url(/static/fonts/DIN.ttf);
+}
+
+@font-face {
+    font-family:Nixie ;
+    src: url(/static/fonts/NixieOne.ttf);
+}
+
+.navigation{
+    display: flex;
+    font-family: Din;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.info_home,h2{
+    font-family:Nixie;
+}
+
+.navigation,div{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation,a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navigation,div,ion-icon{
+    padding: 12px;
+}
+
+.navigation div:hover{
+    color: black;
+    border: black 1px solid;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.navigation a,
+ion-icon {
+    transition: color 0.3s ease;
+}
+
+.navigation div:hover ion-icon {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+.info_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Din;
+    text-align: center;
+}
+
+.videoplay{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 40%;
+    margin-top: 12%;
+}
+
+.video{
+    border: solid 2px black;
+}

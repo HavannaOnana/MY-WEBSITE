@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["..\\..\\persoon.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;;;AAGJ;EACI;EACA;EACA","sourcesContent":["body{\r\n    display: flex;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\na{\r\n    text-decoration: none;\r\n    color: black;\r\n    font-size: 130%;\r\n}"]}

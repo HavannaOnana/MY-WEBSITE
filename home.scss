@@ -1,4 +1,4 @@
-body{
+.home_body{
     background-image: url("/static/images/musashi2.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -82,4 +82,10 @@ ion-icon {
 
 .video{
     border: solid 2px black;
+}
+
+.link_a{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 5%;
 }

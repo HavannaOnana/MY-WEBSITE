@@ -1,4 +1,16 @@
-body{
+@font-face {
+    font-family:Din ;
+    src: url(/static/fonts/DIN.ttf);
+}
+
+@font-face {
+    font-family:Nixie ;
+    src: url(/static/fonts/NixieOne.ttf);
+}
+
+
+
+.review_body{
     background-color: white;
 }
 
@@ -40,10 +52,25 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: relative;
-    margin-top: 7%;
-    
+    position: absolute;
+    margin-top: -10%; 
 }
+
+.review_feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Din;
+    font-size: 150%;
+    position: relative;
+    margin-bottom: 10%; 
+}
+
+.review_feed_p{
+    font-size:72% ;
+}
+
 
 .profile_1{
     display: flex;
